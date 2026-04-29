@@ -267,6 +267,14 @@
     border-left: 3px solid #0070a0;
     border-radius: 6px;
     padding: 10px 14px;
+    transition: border-left-color .2s, background .2s, transform .15s, box-shadow .2s;
+    cursor: default;
+  }
+  .uek-card:hover {
+    border-left-color: var(--accent);
+    background: #1a2a38;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,212,255,.1);
   }
   .uek-card.active {
     border-left-color: var(--accent);
@@ -281,6 +289,15 @@
     border-radius: 20px;
     padding: 5px 14px;
     font-size: 12px; color: var(--text);
+    transition: border-color .2s, background .2s, transform .15s, box-shadow .2s;
+    cursor: default;
+  }
+  .strength-chip:hover {
+    border-color: var(--accent);
+    background: #1a2f3a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,212,255,.15);
+    color: #fff;
   }
 
   /* ── INTERESTS ── */
@@ -292,6 +309,15 @@
     padding: 6px 14px;
     font-size: 12px; color: var(--text);
     display: flex; align-items: center; gap: 6px;
+    transition: border-color .2s, background .2s, transform .15s, box-shadow .2s;
+    cursor: default;
+  }
+  .interest-chip:hover {
+    border-color: var(--accent);
+    background: #1a2f3a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(0,212,255,.15);
+    color: #fff;
   }
 
   /* ── YEAR HEADER ── */
